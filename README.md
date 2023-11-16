@@ -1,0 +1,1 @@
+REST API along with some web pages. An example of a basic spring boot application along with a in memory DB
