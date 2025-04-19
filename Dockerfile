@@ -1,4 +1,4 @@
 FROM openjdk:21
-COPY target\\learning-spring-0.0.1-SNAPSHOT.jar app.jar
+COPY target/learning-spring-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
 CMD ["java","-jar","app.jar"]
