@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot_demoapp_1
+spec:
+  selector:
+    matchLabels:
+      app: springboot_demoapp_1
+  template:
+    metadata:
+      labels:
+        app: springboot_demoapp_1
+    spec:
+      containers:
+      - name: springboot_demoapp_1
+        image: kulbhushakulbhushanmayer/springboot_demoapp_1:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "250m"
+        ports:
+        - containerPort: 8080
